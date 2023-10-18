@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Capstone project</title>
+ <style>
+  body {
+    /*background-color: aqua;*/
+    overflow-x: hidden;
+    margin: 0;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+header {
+    background-color: rgb(246, 243, 243);
+}
+.nav-item {
+    color: red;
+}
+  /* Navbar styles */
+  .navbar {
+            background-color: #160202; /* Set your desired navbar background color */
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 0 5px;
+            text-decoration: none;
+            transition-duration: 0.8s;
+        }
+        .navbar a:hover {
+            background-color: #f50b0b; /* Set your desired hover background color */
+            color: black;
+            border-radius: 50%;
+        }
+        .navbar-logo {
+            float: left;
+            width: 80px;
+            margin-right: 10px;
+            border-radius: 15%;
+          }
+.top_heading {
+    width: 90vw;
+    height: 20vh;
+    margin-top: 10px;
+}
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    margin-top: -5px;      
+    margin-bottom: 10px;
+    animation: lightAnimation 0.9s infinite alternate;
+}
+ @keyframes lightAnimation {
+    0% {
+            color: #f90000;
+        }
+    25% {
+            color: #070707; 
+        }
+    45%{
+            color: #3904f9;
+    }
+    70%{
+            color: #05f88f;
+    }
+    100% {
+            color: #FFF6FF;
+    }
+ }
+.top_navbar {
+    margin-bottom: 10px;
+    width: 13vw;
+    height: 10vh;
+    padding-left:10px;
+}
+.logo_mech {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/IMG-20230508-WA0002-removebg-preview.png?v=1683571352768");
+    width: 100px;
+}
+.carousel {
+    margin-top: 150px;
+    height: 40vh;
+    width: 100vw;
+}
+.box_container {
+    height: 50vh;
+    width: 100vw;
+
+}
+.box_item {
+    height: 150px;
+    width: 150px;
+    margin: 3vh;
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(169, 43, 43);
+}
+.height {
+    height: 45vh;
+}
+.width {
+    width: 60vw;
+    margin-left: 20vw;
+}
+.box_item_img_1 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__7_-removebg-preview.png?v=1683575292254");
+    background-size: cover;
+}
+.box_item_img_2 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__6_-removebg-preview.png?v=1683575280434");
+    background-size: cover;
+}
+.box_item_img_3 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/attendence-removebg-preview%20(1).png?v=1683575249011");
+    background-size: cover;
+}
+.box_item_img_4 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__4_-removebg-preview.png?v=1683575256772");
+    background-size: cover;
+}
+.box_item_img_5 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/download__5_-removebg-preview.png?v=1683575267183");
+    background-size: cover;
+}
+.box_item_img_6 {
+    background-image: url("https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/images__5_-removebg-preview.png?v=1683575215177");
+    background-size: cover;
+}
+.carousel_box_shawod {
+    animation: slide 2s infinite; /* Adjust the time (12s) as needed */
+    margin-bottom: 50px;
+    
+    width: 70px;
+}
+
+.text_heading {
+    font-family: Roboto;
+    margin-bottom: 15px;   
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+   .one {
+     font-size:40px;
+     color:purple;
+   }
+   
+   .heading_shadow{
+     shadow: 10px 10px 5px black;
+     /**margin-bottom:10px;**/
+   }
+</style> 
+</head>
+<body>
+    <header>
+     <!-- Navbar -->
+   <!-- Navbar -->
+   <div class="navbar">
+    <img src="https://th.bing.com/th?id=OIP.T-bnK2zNU3ZYy2JRyf7eNgAAAA&w=227&h=274&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Logo" class="navbar-logo"> <!-- Replace "your-logo.png" with your logo image URL or path -->
+    <a href="login.html">Login</a>
+    <a href="signup.html">SignUp</a>
+    <a href="start.html">Home</a>
+    <a href="#">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+    <!-- Rest of your content -->
+    <div class="div_top heading_shadow">
+        <!-- ... (your existing content) ... -->
+    </div>
+    <div class="div_top heading_shadow">
+        <div class="top_div d-flex">
+            <div class="top_navbar logo_mech"></div>
+            <div class="top_heading heading  "><span class="one">V</span>ISHNU <span class="one"> I</span>NSTITUTE OF <span class="one"> T</span>ECHNOLOGY <span class="one"> A</span>UTONOMOUS <span class="one"> M</span>ECHANICAL <span class="one">EN</span>GINEERING(VITAMEN)</div>
+            
+        </div></header>
+        <div class="carousel_box_shawod">
+            <div class="height ">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/Screenshot%202023-05-09%20095646.png?v=1683606455719" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/WhatsApp%20Image%202023-05-09%20at%209.58.54%20AM.jpeg?v=1683606577868" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/WhatsApp%20Image%202023-05-09%20at%2010.06.43%20AM.jpeg?v=1683607055933" alt="fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="height width " src="https://cdn.glitch.global/b6cf699d-8aac-46b2-b715-929c136f8320/Screenshot%202023-05-09%20100037.png?v=1683606730262" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="box_container">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a href="https://www.vishnu.edu.in/placements.php">
+                            <div class=" box_item box_item_img_1 text-center">
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Placements</div>
+                            </btn>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://checker-rich-spell.glitch.me/sub_and_vids.html">
+                            <div class="box_item box_item_img_2 text-center">
+                            </div>
+                            <btn class="">
+                                <div class="text_heading text-center">Lectures</div>
+                            </btn>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://vishnu.ac.in/Default.aspx?ReturnUrl=%2f">
+                            <div class="box_item text-center box_item_img_3">
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Attendence</div>
+                            </btn>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a href="https://vishnu.edu.in/results.php">
+                            <div class="box_item text-center box_item_img_4">
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Results</div>
+                            </btn>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://checker-rich-spell.glitch.me/materials.html">
+                            <div class="box_item text-center box_item_img_5">
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Materials</div>
+                            </btn>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://checker-rich-spell.glitch.me/faculty%26alumni.html">
+                            <div class="box_item text-center box_item_img_6">
+                            </div>
+                            <btn>
+                                <div class="text_heading text-center">Faculty & Alumni</div>
+                            </btn>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+
